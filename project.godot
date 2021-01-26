@@ -8,110 +8,9 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Reference",
-"class": "AES",
-"language": "GDScript",
-"path": "res://project/NCrypt/Cipher/AES.gd"
-}, {
-"base": "Reference",
-"class": "ARCFOUR",
-"language": "GDScript",
-"path": "res://project/NCrypt/Cipher/ARCFOUR.gd"
-}, {
-"base": "Node",
-"class": "AudioManage",
-"language": "GDScript",
-"path": "res://addons/WebAudioExternal/AudioManager.gd"
-}, {
-"base": "Node2D",
-"class": "AudioSpacial2D",
-"language": "GDScript",
-"path": "res://addons/WebAudioExternal/AudioSpacial2D.gd"
-}, {
-"base": "Reference",
-"class": "CHACHA",
-"language": "GDScript",
-"path": "res://project/NCrypt/Cipher/CHACHA.gd"
-}, {
-"base": "Reference",
-"class": "CSPRNG",
-"language": "GDScript",
-"path": "res://project/NCrypt/PRNG/CSPRNG.gd"
-}, {
-"base": "Node",
-"class": "FutureThreadPool",
-"language": "GDScript",
-"path": "res://addons/thread_pool/future_thread_pool.gd"
-}, {
-"base": "Reference",
-"class": "HMACSHA256",
-"language": "GDScript",
-"path": "res://project/NCrypt/Hash/HMACSHA256.gd"
-}, {
-"base": "Reference",
-"class": "JSONBeautifier",
-"language": "GDScript",
-"path": "res://addons/json_beautifier/json_beautifier.gd"
-}, {
-"base": "Reference",
-"class": "JSONMinifier",
-"language": "GDScript",
-"path": "res://addons/json_minifier/json_minifier.gd"
-}, {
-"base": "Node",
-"class": "JavascriptManage",
-"language": "GDScript",
-"path": "res://addons/WebAudioExternal/JavascriptManager.gd"
-}, {
-"base": "Reference",
-"class": "NCrypt",
-"language": "GDScript",
-"path": "res://project/NCrypt/NCrypt.gd"
-}, {
-"base": "Reference",
-"class": "PKCS5",
-"language": "GDScript",
-"path": "res://project/NCrypt/Pad/PKCS5.gd"
-}, {
-"base": "Reference",
-"class": "SHA256",
-"language": "GDScript",
-"path": "res://project/NCrypt/Hash/SHA256.gd"
-}, {
-"base": "Reference",
-"class": "SIPHASH",
-"language": "GDScript",
-"path": "res://project/NCrypt/Hash/SIPHASH.gd"
-}, {
-"base": "Node",
-"class": "ThreadPool",
-"language": "GDScript",
-"path": "res://addons/thread_pool/thread_pool.gd"
-}, {
-"base": "Reference",
-"class": "UUID",
-"language": "GDScript",
-"path": "res://addons/crypto_uuid_v4/uuid.gd"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"AES": "",
-"ARCFOUR": "",
-"AudioManage": "",
-"AudioSpacial2D": "",
-"CHACHA": "",
-"CSPRNG": "",
-"FutureThreadPool": "",
-"HMACSHA256": "",
-"JSONBeautifier": "",
-"JSONMinifier": "",
-"JavascriptManage": "",
-"NCrypt": "",
-"PKCS5": "",
-"SHA256": "",
-"SIPHASH": "",
-"ThreadPool": "",
-"UUID": ""
+
 }
 
 [application]
@@ -128,11 +27,6 @@ boot_splash/image="res://title.png"
 config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 config/windows_native_icon="res://icon.ico"
-
-[autoload]
-
-JavascriptManager="*res://addons/WebAudioExternal/JavascriptManager.gd"
-AudioManager="*res://addons/WebAudioExternal/AudioManager.gd"
 
 [compression]
 
@@ -164,7 +58,7 @@ convert_text_resources_to_binary_on_export=true
 
 [editor_plugins]
 
-enabled=PoolStringArray( "WebAudioExternal", "ridiculous_coding", "thread_pool" )
+enabled=PoolStringArray(  )
 
 [filesystem]
 
@@ -173,6 +67,10 @@ import/open_asset_import/use_fbx=false
 [gui]
 
 theme/use_hidpi=true
+
+[locale]
+
+locale_filter=[ 0, [ "sl", "sl_SI" ] ]
 
 [logging]
 
