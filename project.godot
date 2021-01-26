@@ -1,0 +1,200 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "AES",
+"language": "GDScript",
+"path": "res://project/NCrypt/Cipher/AES.gd"
+}, {
+"base": "Reference",
+"class": "ARCFOUR",
+"language": "GDScript",
+"path": "res://project/NCrypt/Cipher/ARCFOUR.gd"
+}, {
+"base": "Node",
+"class": "AudioManage",
+"language": "GDScript",
+"path": "res://addons/WebAudioExternal/AudioManager.gd"
+}, {
+"base": "Node2D",
+"class": "AudioSpacial2D",
+"language": "GDScript",
+"path": "res://addons/WebAudioExternal/AudioSpacial2D.gd"
+}, {
+"base": "Reference",
+"class": "CHACHA",
+"language": "GDScript",
+"path": "res://project/NCrypt/Cipher/CHACHA.gd"
+}, {
+"base": "Reference",
+"class": "CSPRNG",
+"language": "GDScript",
+"path": "res://project/NCrypt/PRNG/CSPRNG.gd"
+}, {
+"base": "Node",
+"class": "FutureThreadPool",
+"language": "GDScript",
+"path": "res://addons/thread_pool/future_thread_pool.gd"
+}, {
+"base": "Reference",
+"class": "HMACSHA256",
+"language": "GDScript",
+"path": "res://project/NCrypt/Hash/HMACSHA256.gd"
+}, {
+"base": "Reference",
+"class": "JSONBeautifier",
+"language": "GDScript",
+"path": "res://addons/json_beautifier/json_beautifier.gd"
+}, {
+"base": "Reference",
+"class": "JSONMinifier",
+"language": "GDScript",
+"path": "res://addons/json_minifier/json_minifier.gd"
+}, {
+"base": "Node",
+"class": "JavascriptManage",
+"language": "GDScript",
+"path": "res://addons/WebAudioExternal/JavascriptManager.gd"
+}, {
+"base": "Reference",
+"class": "NCrypt",
+"language": "GDScript",
+"path": "res://project/NCrypt/NCrypt.gd"
+}, {
+"base": "Reference",
+"class": "PKCS5",
+"language": "GDScript",
+"path": "res://project/NCrypt/Pad/PKCS5.gd"
+}, {
+"base": "Reference",
+"class": "SHA256",
+"language": "GDScript",
+"path": "res://project/NCrypt/Hash/SHA256.gd"
+}, {
+"base": "Reference",
+"class": "SIPHASH",
+"language": "GDScript",
+"path": "res://project/NCrypt/Hash/SIPHASH.gd"
+}, {
+"base": "Node",
+"class": "ThreadPool",
+"language": "GDScript",
+"path": "res://addons/thread_pool/thread_pool.gd"
+}, {
+"base": "Reference",
+"class": "UUID",
+"language": "GDScript",
+"path": "res://addons/crypto_uuid_v4/uuid.gd"
+} ]
+_global_script_class_icons={
+"AES": "",
+"ARCFOUR": "",
+"AudioManage": "",
+"AudioSpacial2D": "",
+"CHACHA": "",
+"CSPRNG": "",
+"FutureThreadPool": "",
+"HMACSHA256": "",
+"JSONBeautifier": "",
+"JSONMinifier": "",
+"JavascriptManage": "",
+"NCrypt": "",
+"PKCS5": "",
+"SHA256": "",
+"SIPHASH": "",
+"ThreadPool": "",
+"UUID": ""
+}
+
+[application]
+
+config/name="Software Installer Pack"
+config/description="Software Installer Pack
+
+Created by Andrew Poženel AKA SloDevTeam"
+run/main_scene="res://main.scn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="SIP"
+run/low_processor_mode=true
+boot_splash/image="res://title.png"
+config/icon="res://icon.png"
+config/macos_native_icon="res://icon.icns"
+config/windows_native_icon="res://icon.ico"
+
+[autoload]
+
+JavascriptManager="*res://addons/WebAudioExternal/JavascriptManager.gd"
+AudioManager="*res://addons/WebAudioExternal/AudioManager.gd"
+
+[compression]
+
+formats/zstd/long_distance_matching=true
+formats/zstd/compression_level=22
+formats/zstd/window_log_size=30
+formats/zlib/compression_level=9
+formats/gzip/compression_level=9
+
+[debug]
+
+gdscript/completion/autocomplete_setters_and_getters=true
+
+[display]
+
+window/size/height=768
+window/size/resizable=false
+window/size/test_width=1024
+window/size/test_height=768
+window/dpi/allow_hidpi=true
+window/vsync/vsync_via_compositor=true
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
+[editor]
+
+search_in_file_extensions=PoolStringArray( "gd", "shader", "tscn", "tres" )
+convert_text_resources_to_binary_on_export=true
+
+[editor_plugins]
+
+enabled=PoolStringArray( "WebAudioExternal", "ridiculous_coding", "thread_pool" )
+
+[filesystem]
+
+import/open_asset_import/use_fbx=false
+
+[gui]
+
+theme/use_hidpi=true
+
+[logging]
+
+file_logging/enable_file_logging.pc=false
+file_logging/max_log_files=0
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+quality/driver/fallback_to_gles2=true
+quality/2d/use_nvidia_rect_flicker_workaround=true
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=1
+quality/2d/use_pixel_snap=true
+threads/thread_model=2
+vram_compression/import_bptc=true
+vram_compression/import_etc=true
+vram_compression/import_pvrtc=true
+quality/shadows/filter_mode=0
+quality/filters/use_nearest_mipmap_filter=true
+gles2/compatibility/disable_half_float=true
+batching/precision/uv_contract=true
+quality/depth/hdr=false
+quality/filters/anisotropic_filter_level=1
+quality/subsurface_scattering/quality=0
