@@ -8,9 +8,62 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Reference",
+"class": "AES",
+"language": "GDScript",
+"path": "res://project/NCrypt/Cipher/AES.gd"
+}, {
+"base": "Reference",
+"class": "ARCFOUR",
+"language": "GDScript",
+"path": "res://project/NCrypt/Cipher/ARCFOUR.gd"
+}, {
+"base": "Reference",
+"class": "CHACHA",
+"language": "GDScript",
+"path": "res://project/NCrypt/Cipher/CHACHA.gd"
+}, {
+"base": "Reference",
+"class": "CSPRNG",
+"language": "GDScript",
+"path": "res://project/NCrypt/PRNG/CSPRNG.gd"
+}, {
+"base": "Reference",
+"class": "HMACSHA256",
+"language": "GDScript",
+"path": "res://project/NCrypt/Hash/HMACSHA256.gd"
+}, {
+"base": "Reference",
+"class": "NCrypt",
+"language": "GDScript",
+"path": "res://project/NCrypt/NCrypt.gd"
+}, {
+"base": "Reference",
+"class": "PKCS5",
+"language": "GDScript",
+"path": "res://project/NCrypt/Pad/PKCS5.gd"
+}, {
+"base": "Reference",
+"class": "SHA256",
+"language": "GDScript",
+"path": "res://project/NCrypt/Hash/SHA256.gd"
+}, {
+"base": "Reference",
+"class": "SIPHASH",
+"language": "GDScript",
+"path": "res://project/NCrypt/Hash/SIPHASH.gd"
+} ]
 _global_script_class_icons={
-
+"AES": "",
+"ARCFOUR": "",
+"CHACHA": "",
+"CSPRNG": "",
+"HMACSHA256": "",
+"NCrypt": "",
+"PKCS5": "",
+"SHA256": "",
+"SIPHASH": ""
 }
 
 [application]
